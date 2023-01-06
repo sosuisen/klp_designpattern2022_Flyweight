@@ -7,7 +7,8 @@ public class BigString {
         BigCharFactory factory = BigCharFactory.getInstance();
         bigchars = new BigChar[string.length()];
         for (int i = 0; i < bigchars.length; i++) {
-             bigchars[i] = factory.getBigChar(string.charAt(i));
+//          bigchars[i] = factory.getBigChar(string.charAt(i));
+        	bigchars[i] = new BigChar(string.charAt(i));
         }
     }
 
