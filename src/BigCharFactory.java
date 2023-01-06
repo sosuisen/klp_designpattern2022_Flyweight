@@ -1,9 +1,8 @@
 import java.util.HashMap;
-import java.util.Map;
 
 public class BigCharFactory {
     // すでに作ったBigCharのインスタンスを管理
-    private Map<String,BigChar> pool = new HashMap<>();
+    private HashMap<String,BigChar> pool = new HashMap<>();
     // Singletonパターン
     private static BigCharFactory singleton = new BigCharFactory();
 

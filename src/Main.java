@@ -8,5 +8,9 @@ public class Main {
 
         BigString bs = new BigString(args[0]);
         bs.print();
+        
+        Runtime.getRuntime().gc();
+        long used = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
+        System.out.println("使用メモリ = " + used);
     }
 }
